@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import logo from "../../assets/images/logo.jpg";
-import { useEffect, UseRef } from "react";
+import { useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { BiMenu } from "react-icons/bi";
 const naviLinks = [
@@ -42,7 +42,7 @@ const Header = () => {
   useEffect(() => {
     handleStickyHeader();
 
-    return () => window.removeEventListener("scroll", handleStickyHeader);
+    return window.removeEventListener("scroll", handleStickyHeader);
   });
 
   const toggleMenu = () => menuRef.current.classList.toggle("show__menu");
@@ -56,7 +56,7 @@ const Header = () => {
           </div>
 
           {/* menu */}
-          <div className="naviagtion" ref={menuRef} onClick={toggleMenu}>
+          <div className="navigation" ref={menuRef} onClick={toggleMenu}>
             <ul className="menu flex items-center gap-[2.7rem]">
               {naviLinks.map((link, index) => (
                 <li key={index}>
@@ -77,7 +77,7 @@ const Header = () => {
 
           {/* nav right */}
           <div className="flex items-center gap-4">
-            <div className="hidden">
+            <div className="">
               <span className="md:hidden" onClick={toggleMenu}>
                 <BiMenu className="w-6 h-6 cursor-pointer" />
               </span>
