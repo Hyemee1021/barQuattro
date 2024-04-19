@@ -52,7 +52,11 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* logo */}
           <div>
-            <img src={logo} alt="" className="w-[80px] h-[80px] rounded-full" />
+            <img
+              src={logo}
+              alt=""
+              className="w-[80px] h-[80px] rounded-full shadow-sm"
+            />
           </div>
 
           {/* menu */}

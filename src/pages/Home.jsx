@@ -15,11 +15,11 @@ const Home = () => {
             {/* hero content */}
             <div>
               <div className="lg:w-[570px]">
-                <h1 className="text-[36px] leading-[46px] text-stone-500 font-[800] md:text-[60px] md:leading-[70px] ">
-                  Bar Quatro Authentic Italian
+                <h1 className="text-[36px] leading-[46px] text-stone-600 font-[800] md:text-[60px] md:leading-[70px] ">
+                  Bar Quattro Authentic Italian
                 </h1>
 
-                <p className="text__para">
+                <p className="text__para text-stone-600">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Natus quaerat cumque fugit, perspiciatis cum nemo aperiam, aut
                   quia earum amet architecto, modi odio. Soluta unde ducimus
@@ -48,8 +48,10 @@ const Home = () => {
       <section>
         <div className="container">
           <div className="lg:w-[470px] mx-auto">
-            <h2 className="heading text-center">Functions</h2>
-            <p className="text-para text-center">Enjoy our intersting events</p>
+            <h2 className="heading text-center text-stone-600">Functions</h2>
+            <p className="text-para text-center text-stone-600">
+              Enjoy our intersting events
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 lg:gap-[30px] mt-[30px] lg:mt-[55px]">
@@ -62,8 +64,8 @@ const Home = () => {
           </div>
 
           <div className="mt-[30px]">
-            <h2>Function 1</h2>
-            <p>Enjoy our various functions</p>
+            <h2 className="text-stone-600">Function 1</h2>
+            <p className="text-stone-600">Enjoy our various functions</p>
             <Link
               to="/functions"
               className="w-[44px] h-[44px] rounded-full border border-solid border-[#1818A1E] mt-[30px] mx-auto flex items-center justify-center group hover:bg-buttonBgColor hover:border-none"
